@@ -23,8 +23,115 @@
          <label for="a">Resultado</label>
         <input type="number" id="resultado" name="resultado"><br>
 
+        <script>
+            function sumar(){
+
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+
+            var resultado;
+
+            if(a == ""){
+               a = 0; 
+            }else{
+                a= parseInt(a);
+            }
+
+            if(b == ""){
+               b = 0; 
+            }else{
+                b= parseInt(b);
+            }
+
+            resultado = a + b;
+
+            document.getElementById("resultado").value = resultado 
+            }
+        
+        </script>
+        <script>
+            function restar(){
+
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+
+            var resultado;
+
+            if(a == ""){
+               a = 0; 
+            }else{
+                a= parseInt(a);
+            }
+
+            if(b == ""){
+               b = 0; 
+            }else{
+                b= parseInt(b);
+            }
 
 
+            resultado = a - b;
 
-    </body>
-    </html>
+            document.getElementById("resultado").value = resultado 
+            }
+        </script>
+
+        <script>
+            function multiplicar(){
+
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+
+            var resultado;
+
+
+            if(a == ""){
+               a = 0; 
+            }else{
+                a= parseInt(a);
+            }
+
+            if(b == ""){
+               b = 0; 
+            }else{
+                b= parseInt(b);
+            }
+
+
+            resultado = a * b;
+
+            document.getElementById("resultado").value = resultado 
+            }
+        </script>
+
+        <script>
+            function dividir(){
+
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+
+
+            var resultado;
+
+
+            if(a == ""){
+               a = 0; 
+            }else{
+                a= parseInt(a);
+            }
+
+            if(b == ""){
+               b = 0; 
+            }else{
+                b= parseInt(b);
+            }
+
+
+            resultado = a / b;
+
+            document.getElementById("resultado").value = resultado 
+            }
+
+</script>
+</body>
+</html>
